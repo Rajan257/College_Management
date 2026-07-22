@@ -1,0 +1,9 @@
+# Eclipse project artifacts
+.metadata/
+*.tmp
+*.bak
+*.swp
+*~
+
+# Compiled class files in root temp folders if any
+*.log
