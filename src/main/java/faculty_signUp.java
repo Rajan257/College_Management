@@ -53,12 +53,7 @@ public class faculty_signUp extends HttpServlet {
         PreparedStatement ps = null;
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-
-            con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/project",
-                    "root",
-                    "Rajan@123");
+            con = DBUtil.getConnection();
 
             ps = con.prepareStatement(
                     "INSERT INTO faculty_signup(uid, Name, Email, contact, password) VALUES(?,?,?,?,?)");

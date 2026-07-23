@@ -89,7 +89,7 @@ body {
     text-transform: uppercase;
 }
 
-/* 3. Navigation Bar - Hover effect only (No fixed red color) */
+
 .main-nav {
     background-color: #002244;
     padding: 0 30px;
@@ -111,7 +111,7 @@ body {
     color: #ffffff;
 }
 
-/* 4. Hero Section with Side Admission Form */
+
 .hero-wrapper {
     background: linear-gradient(rgba(0, 34, 68, 0.75), rgba(0, 34, 68, 0.75)), url('Image/bbd image.jpg');
     background-size: cover;
@@ -236,7 +236,7 @@ body {
     color: #ffcc00;
 }
 
-/* 6. Portals Grid Section */
+
 .portals-section {
     padding: 60px 30px;
     max-width: 1100px;
@@ -321,7 +321,6 @@ body {
     background-color: #1e7e34;
 }
 
-/* 7. Stats Counter Bar */
 .stats-bar {
     background-color: #002244;
     color: white;
@@ -379,7 +378,7 @@ body {
 </head>
 <body>
 
-<!-- 1. Top Contact Utility Bar -->
+
 <div class="top-utility-bar">
     <div class="top-utility-left">
         <span>📧 rajanbhatt@257</span>
@@ -393,7 +392,7 @@ body {
     </div>
 </div>
 
-<!-- 2. Main Brand Header -->
+
 <div class="main-header">
     <a href="index.jsp" class="brand-logo">
         <div class="logo-icon">C</div>
@@ -404,7 +403,7 @@ body {
     </a>
 </div>
 
-<!-- 3. Main Navigation Bar - Cursor Hover Effect Only -->
+
 <div class="main-nav">
     <a href="index.jsp">HOME</a>
     <a href="About.jsp">ABOUT US</a>
@@ -415,7 +414,7 @@ body {
     <a href="faculty_signUp.jsp">FACULTY SIGNUP</a>
 </div>
 
-<!-- 4. Hero Section with Side Admission Box -->
+
 <div class="hero-wrapper">
     <div class="hero-content">
         <h2>Leading Excellence in Higher Education</h2>
@@ -426,7 +425,7 @@ body {
         </div>
     </div>
 
-    <!-- Quick Enquiry / Registration Box -->
+
     <div class="admission-card">
         <h3>APPLY TODAY FOR</h3>
         <h4>Admissions 2026-27</h4>
@@ -455,7 +454,7 @@ body {
     </div>
 </div>
 
-<!-- 5. Movable Notification Marquee Ticker -->
+
 <div class="ticker-bar">
     <span class="ticker-tag">OFFICIAL ANNOUNCEMENTS</span>
     <marquee class="ticker-text" behavior="scroll" direction="left" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
@@ -463,7 +462,7 @@ body {
     </marquee>
 </div>
 
-<!-- 6. Role-Based Portals Section -->
+
 <div class="portals-section">
     <div class="section-title">
         <h2>ACADEMIC PORTALS</h2>
@@ -494,7 +493,7 @@ body {
     </div>
 </div>
 
-<!-- 7. Key Statistics Bar -->
+
 <div class="stats-bar">
     <div class="stat-item">
         <h3>25+</h3>
@@ -514,7 +513,7 @@ body {
     </div>
 </div>
 
-<!-- 8. Footer -->
+
 <div class="footer">
     <div class="footer-grid">
         <div class="footer-col">

@@ -35,12 +35,7 @@ public class admin_delete_faculty extends HttpServlet {
 
         try {
 
-            Class.forName("com.mysql.cj.jdbc.Driver");
-
-            Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/project",
-                    "root",
-                    "Rajan@123");
+            Connection con = DBUtil.getConnection();
 
             PreparedStatement ps = con.prepareStatement(
                     "DELETE FROM faculty_signup WHERE uid=?");

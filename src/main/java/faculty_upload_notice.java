@@ -49,12 +49,7 @@ public class faculty_upload_notice extends HttpServlet {
         PreparedStatement ps = null;
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-
-            con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/project",
-                    "root",
-                    "Rajan@123");
+            con = DBUtil.getConnection();
 
             ps = con.prepareStatement(
                     "INSERT INTO notices(title, content, posted_by) VALUES(?,?,?)");

@@ -44,12 +44,7 @@ public class admin_update_faculty extends HttpServlet {
         ResultSet rs = null;
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-
-            con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/project",
-                    "root",
-                    "Rajan@123");
+            con = DBUtil.getConnection();
 
             ps = con.prepareStatement(
                     "SELECT * FROM faculty_signup WHERE uid=?");
@@ -124,12 +119,7 @@ public class admin_update_faculty extends HttpServlet {
         PreparedStatement ps = null;
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-
-            con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/project",
-                    "root",
-                    "Rajan@123");
+            con = DBUtil.getConnection();
 
             ps = con.prepareStatement(
                     "UPDATE faculty_signup SET Name=?, Email=?, contact=? WHERE uid=?");

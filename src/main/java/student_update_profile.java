@@ -55,12 +55,7 @@ public class student_update_profile extends HttpServlet {
         PreparedStatement ps = null;
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-
-            con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/project",
-                    "root",
-                    "Rajan@123");
+            con = DBUtil.getConnection();
 
             ps = con.prepareStatement(
                     "UPDATE student_signup SET Name=?, Email=?, contact=? WHERE uid=?");

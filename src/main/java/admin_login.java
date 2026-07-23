@@ -49,12 +49,7 @@ public class admin_login extends HttpServlet {
         ResultSet rs = null;
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-
-            con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/project",
-                    "root",
-                    "Rajan@123");
+            con = DBUtil.getConnection();
 
             ps = con.prepareStatement(
                     "SELECT * FROM admin_signup WHERE uid=? AND password=?");
