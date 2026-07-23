@@ -1,7 +1,7 @@
 -- ============================================================
 -- College Management System - Full Database Dump & Schema
 -- Generated for deployment on Aiven / Render / MySQL 8.0+
--- Database Name: defaultdb (or project)
+-- Database Name: defaultdb
 -- ============================================================
 
 CREATE TABLE IF NOT EXISTS admin_signup (
@@ -21,6 +21,7 @@ CREATE TABLE IF NOT EXISTS faculty_signup (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS student_signup (
+  id INT AUTO_INCREMENT PRIMARY KEY,
   uid VARCHAR(50),
   Name VARCHAR(50),
   Email VARCHAR(80),
