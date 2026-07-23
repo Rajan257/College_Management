@@ -1,9 +1,16 @@
-# Eclipse project artifacts
+# Eclipse & Maven build artifacts
 .metadata/
 *.tmp
 *.bak
 *.swp
 *~
-
-# Compiled class files in root temp folders if any
 *.log
+
+build/
+target/
+.classpath
+.project
+.settings/
+
+*.class
+src/main/webapp/WEB-INF/classes/
